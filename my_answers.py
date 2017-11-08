@@ -38,7 +38,7 @@ def build_part1_RNN(window_size):
 
 ### TODO: return the text input with only ascii lowercase and the punctuation given below included.
 def cleaned_text(text):
-    allowed = string.ascii_letters + string.digits + '!,.:;? '
+    allowed = string.ascii_letters + '!,.:;? '
     cleaned = [c for c in text if c in allowed]
 
     return ('{}'*len(cleaned)).format(*cleaned)
